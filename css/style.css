@@ -11,6 +11,61 @@
     font-family: 'Montserrat-Regular';
     src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
 }
+@font-face{
+    font-family: 'Montserrat-Light';
+    src: url("/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: 'PlayfairDisplay-Bold';
+    src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+@font-face{
+    font-family: 'PlayfairDisplay-Medium';
+    src: url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+}
+@font-face{
+    font-family: 'PlayfairDisplay-Regular';
+    src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,h1,h2,h3,h4,p,ul[class],ol[class],li,
+figure,figcaption,blockquote,dl,dd {
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+  }
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 html, body{
     /* display: flex;
     justify-content: center; */
@@ -20,7 +75,10 @@ html, body{
 }
 
 header {
+    position: relative;
     background: url(/images/imgBackground.jpg) ;
+    width: 1920px;
+    height: 970px;
     background-repeat: no-repeat;
 }
 a {
@@ -29,14 +87,18 @@ a {
 .logo-menu {
     display: flex;
     justify-content: space-between;
-    border: 5px solid green;
+    
 }
 .logo{
      margin-top: 40px;
+     width: 350px;
      margin-left: 120px;
+     
 }
 .href-menu{
-    margin: 45px;
+    margin: 45px auto;
+    width: 350px;
+   
 }
 .href-menu a {
     margin: 20px;
@@ -45,26 +107,139 @@ a {
     color: #FFFEFE;
 }
 .menu {
+    text-align: right;
     margin-top: 45px;
-    margin-right: 120px;  
+    margin-right: 120px; 
+    width: 350px; 
     color: #FFFEFE;
+    
+ }
+ .burger-menu {
+     display: inline-block;
+     
  }
 
  hgroup {
      width: 688px;
      height: 329px;
-     margin-top: 145px;
+     margin-top: 100px;
      margin-left: 120px;
-     border:1px solid red;
- }
- hgroup h2{
-     width: 486px;
-     height: 94px;
-     color: #FFFEFE;
+     
  }
 
- .mine-heading h1{
-     font-size: 71px;
-     color: #FFFEFE;
-    
+ hgroup h1{
+     font-size: 70px;
+     line-height: 100px;
+     font-family: 'PlayfairDisplay-Bold';
+     color: #FFFEFE;  
  }
+
+  hgroup h2{
+     width: 486px;
+     height: 94px;
+     margin-top: 35px;
+     line-height: 50px;
+     font-family: 'Montserrat-Light';
+     font-size: 25px;
+     color: #FFFEFE;
+     
+ }
+
+ .img-island{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+ }
+
+ .img-island-three{
+     margin-right: 120px;
+ }
+
+ .img-block{
+     position: relative;
+     margin-left: 30px;
+     margin-bottom: 70px;
+ }
+
+ .img-block img {
+    border-radius: 16px;
+ }
+
+ .num-img{
+     position: absolute;
+     top: 16px;
+     left: 16px;
+     color: #FFFEFE;
+     font: 25px 'Montserrat-Medium';
+ }
+
+ .text-img {
+     position: absolute;
+     width: 140px;
+     height: 50px;
+     bottom: 24px;
+     left: 26px;
+     font: 18px 'Montserrat-Regular';
+     line-height: 25px;
+     color: #FFFEFE ;   
+ }
+
+.arrow-img {
+     position: absolute;
+     bottom: 24px;
+     right: 24px;
+     color: #FFFEFE;
+ }
+     
+ header .social-net {  
+    position: absolute; 
+    bottom: 70px;
+    left: 120px;
+    color: wheat;
+   
+}
+.social-net a {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 50px;
+} 
+.social-net small {
+    display: block;
+    font: 14px 'Montserrat-Regular';
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+
+
+.play-and-btn {
+    position: relative;
+     width: 700px;
+     height: 75px;
+     margin-top: 80px;
+     
+}
+.btn-sub-applic{
+    position: absolute;
+    width: 307px;
+    height: 75px;
+    margin-left: 120px;
+    background-color: #EFC42B;
+    border-radius: 38px;
+
+}
+.logo-play img {
+    position: absolute;
+    margin-left: 487px;   
+}
+.logo-play small {
+    position: absolute;
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 580px;
+    font: 16px Montserrat-Medium;
+    color: #A2A9B7 ;
+    
+}
+
