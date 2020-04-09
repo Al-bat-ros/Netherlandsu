@@ -108,7 +108,6 @@ header {
   width: 1920px;
   height: 970px;
   margin: 0 auto;
- 
 }
 
 .logo-menu {
@@ -116,6 +115,7 @@ header {
   justify-content: space-between;
   
 }
+
 .logo{
   margin-top: 40px;
   margin-left: 120px;
@@ -124,8 +124,7 @@ header {
 }
 .href-menu {
   margin-top: 45px;
-  width: 350px;
-  
+  width: 350px; 
 }
 .href-menu a {
   font-size: 15px;
@@ -230,8 +229,10 @@ header .social-net small{
 }
 .img-block {
   position: relative;
-  margin-left: 30px;
   margin-bottom: 70px;
+}
+ figure + figure{
+  margin-left: 30px;
 }
 .img-block img {
   border-radius: 16px;
@@ -257,6 +258,7 @@ header .social-net small{
   position: absolute;
   bottom: 24px;
   right: 24px;
+  font-size: 30px;
   color: var(--main-color-text);
 }
 
@@ -291,6 +293,67 @@ body menu li a{
   align-self: start;
   margin-top: 10px;
   color: var(--main-color-text);
-  border: 1px solid red;
 }
 
+#all-tours{
+  display: flex;
+  justify-content: space-between;
+  margin: 160px 262px;
+ 
+}
+
+.img-hawaii{
+  margin-bottom: 0;
+}
+
+.img-hawaii img {
+  width: 827px;
+  height: 473px;
+}
+
+.img-hawaii .num-img{
+  margin-top: 35px;
+  margin-left: 40px;
+  font-size: 23px;
+}
+
+.img-hawaii span{
+  font-size: 16px;
+}
+
+.img-hawaii .text-img{
+  width: 219px;
+  height: 56px;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.img-hawaii .arrow-img{
+  margin-bottom: 18px;
+  margin-right: 40px;
+}
+
+.see-all{
+  margin-top: 40px;
+  margin-bottom: 25px;
+  width: 405px;
+  height: 411px;  
+}
+.see-all h2{
+    font: 42px  'PlayfairDisplay-Bold';
+}
+.see-all p{
+  margin-top: 30px;
+  font: 18px 'Montserrat-Regular';
+  line-height: 33px;
+}
+.btn-see-all{
+  width: 270px;
+  height: 75px;
+  margin-top: 60px;
+  color: #EFC42B; 
+  font: 20px 'Montserrat-SemiBold';
+  border-radius: 38px;
+  border: 2px solid #EFC42B;
+}
