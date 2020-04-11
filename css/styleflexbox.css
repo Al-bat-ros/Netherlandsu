@@ -85,7 +85,6 @@ a{
 }
 
 body {
-  border: 1px solid red;
   box-sizing: border-box;
 }
 .container {
@@ -349,7 +348,7 @@ body menu li a{
   font: 18px 'Montserrat-Regular';
   line-height: 33px;
 }
-.btn-see-all{
+.btn-see-all, .btn-read{
   width: 270px;
   height: 75px;
   margin-top: 60px;
@@ -411,8 +410,68 @@ input + input{
   font: 20px 'Montserrat-SemiBold';
 }
 #form2 small{
-  
   text-align: justify;
   font: 11px 'Montserrat-Regular';
 }
+
+.img-feed{
+  position: relative;
+  margin-left: 50px;
+}
+
+.rew-img, .rew-text-img, .rew-arrow-img {
+  position: absolute;
+}
+
+.rew-img{
+  top: 52px;
+  left: 62px;
+  font: 23px 'PlayfairDisplay-Bold';
+  line-height: 28px;
+  color: white;
+}
+.rew-img span{
+  font: 16px 'Montserrat-Regular';
+}
+.rew-text-img {
+  bottom: 45px;
+  left: 60px;
+  font: 20px 'Montserrat-Medium';
+  line-height: 28px;
+  color: white;
+}
+.rew-arrow-img {
+  bottom: 18px;
+  right: 40px;
+  font-size: 40px;
+  color: white;   
+}
+
+#reviews{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 169px;
+  
+}
+.img-feed img{
+  border-radius: 16px;
+}
+.review-text{
+  margin-right: 50px;
+}
+.review-text h2 {
+  width: 461px;
+  height: 110px;
+  font: 42px 'PlayfairDisplay-Bold';
+  line-height: 55px;
+}
+.review-text p{
+  width: 350px;
+  height: 146px;
+  margin-top: 30px;
+  font: 18px 'Montserrat-Regular';
+  line-height: 33px;
+} 
+
 
