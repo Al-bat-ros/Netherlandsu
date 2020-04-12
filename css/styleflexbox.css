@@ -1,3 +1,4 @@
+
 @font-face{
     font-family: 'Montserrat';
     src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
@@ -90,6 +91,7 @@ body {
 .container {
    width: 1920px;
    margin: 0 auto;
+   
 }
 /* @media(max-width: 1260px){
   width: 768px;
@@ -100,7 +102,6 @@ body {
 @media(max-width: 490px){
   width: 100%;
 } */
-
 
 header {
   position: relative;
@@ -136,11 +137,62 @@ header {
 }
 
 .menu {
+  display: flex;
+  justify-content: flex-end;
   width: 350px;
-  text-align: right;
   margin-top: 45px;
   margin-right: 120px;
-  color: var(--main-color-text);
+  color: var(--main-color-text); 
+}
+.icon-wrapper{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menu-icon{
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+}
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  transition:  transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  transition:  transform 0.2s ease-in, top 0.2s linear 0.2s;
+  
+}
+.menu-icon.menu-icon-active{
+  background-color: transparent;
+}
+.menu-icon.menu-icon-active::before{
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.menu-icon.menu-icon-active::after{
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
  hgroup{
@@ -174,14 +226,17 @@ header {
 }
 
 .btn-sub-applic{
+    outline:none;
     width: 307px;
     height: 75px;
     background-color: #EFC42B;
     font: 20px 'Montserrat-SemiBold';
     border-radius: 38px;
+    transition: all 0.1s linear;
 }
 
 .logo-play img{
+  cursor: pointer;
   margin-left: 60px;
 }
 
@@ -230,6 +285,9 @@ header .social-net small{
 .img-block {
   position: relative;
   margin-bottom: 70px;
+}
+.img-cursor{
+  cursor: pointer;
 }
  figure + figure{
   margin-left: 30px;
@@ -349,6 +407,7 @@ body menu li a{
   line-height: 33px;
 }
 .btn-see-all, .btn-read{
+  outline:none;
   width: 270px;
   height: 75px;
   margin-top: 60px;
@@ -402,12 +461,14 @@ input + input{
   margin-top: 20px;
 }
 .form-btn{
+  outline:none;
   width: 270px;
   height: 75px; 
   margin-top: 30px;          
   background-color: #EFC42B;
   border-radius: 38px;
   font: 20px 'Montserrat-SemiBold';
+  transition: all 0.1s linear;
 }
 #form2 small{
   text-align: justify;
@@ -473,5 +534,59 @@ input + input{
   font: 18px 'Montserrat-Regular';
   line-height: 33px;
 } 
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+  background-color: #ECEEF2;
+  margin-top: 160px;
+}
+.social-net-footer{
+  
+}
+.footer .logo {
+  margin-top: 80px;
+  margin-left: 120px;
+  width: auto;
+
+}
+
+.footer-text-one, .footer-text-two {
+  margin-top: 75px;
+  font: 14px 'Montserrat-Medium';
+  line-height: 20px;
+  
+}
+.footer-text-one {
+  margin-left: 123px; 
+}
+.footer-text-two {
+  margin-left: 47px;
+}
+.social-net{
+  display: flex;
+  width: 185px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 75px;
+  color: #8194A1;
+}
+
+.social-net-footer{
+  margin-left: 780px;
+}
+
+.btn-sub-applic:hover{
+  background-color: rgb(253, 235, 74);
+  transition: all 0.1s linear;
+}
+.form-btn:hover{
+  background-color: rgb(253, 235, 74);
+  transition: all 0.1s linear;
+}
+.btn-sub-applic:active{
+  
+}
 
 
