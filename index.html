@@ -4,173 +4,166 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Irlandia</title>
-		<!-- <link rel="stylesheet" href="./css/style.css"> -->
-		<link rel="stylesheet" href="/css/styleflexbox.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- <link rel="stylesheet" href="/css/styleflexbox.css"> -->
+		<!-- <link rel="stylesheet" href="/css/media.css"> -->
 	</head>
 	<body>
-		<div id="wrapper">
-				<header>
-					<div class="container">
-						<div class="logo-menu">
-							<div class="logo">
-								<img src="./icons/iconLogoWhite.svg" alt="Trip & Mind">
-							</div>
-							<nev class="href-menu">						
-									<a href="#all-tours">Все туры</a>																
-									<a href="#reviews">Отзывы</a>								
-									<a href="#contacts">Контакты</a>								
-							</nev>
-							<div class="menu">
-								<div class="icon-wrapper">
-									<div class="menu-icon ">
+		<main>
+			<header>					
+				<div class="logo">
+						<img src="./icons/iconLogoWhite.svg" alt="Trip & Mind">
+				</div>
+				<nev class="href-menu">	
+					<ul>				
+						<li><a href="#all-tours">Все туры</a></li>																
+						<li><a href="#reviews">Отзывы</a></li>							
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>									
+				</nev>
+				<div class="menu">
+					<div class="icon-wrapper">
+						<div class="menu-icon ">
 
-									</div>
-							    </div>
-							</div>		
 						</div>
 					</div>
-					<div class="container">
-						<div class="mine-heading">
-							<hgroup>
-								<h1>Открой для себя Новую Ирландию</h1>
-								<h2>Авторские туры по экзотическим уголкам от Ивана Иванова</h2>
-						    </hgroup>	
+				</div>		
+			</header>
+			
+				<div class="container">
+					<hgroup>
+						<h1>Открой для себя Новую Ирландию</h1>
+						<h2>Авторские туры по экзотическим уголкам от Ивана Иванова</h2>
+					</hgroup>	
+				</div>
+				<div class="container">	
+					<div class="play-and-btn">	
+						<div class="btn">
+							<button class="btn-sub-applic" type="submit">Оставить заявку</button>
 						</div>
+						<div class="logo-play">
+							<img src="./icons/iconPlay.svg" alt="Play">
+						</div>
+						<p>Посмотрите видео-отчет 2018-2019</p>
 					</div>
-					<div class="container">	
-						<div class="play-and-btn">	
+				</div>
+				<div class="container">		
+					<div class="social-net">
+						<small>Подписывайтесь в соцсетях</small>
+						<a href="#"><img src="./icons/iconYouTube.svg" alt=""></a>
+						<a href="#"><img src="./icons/iconFB.svg" alt=""></a>
+						<a href="#"><img src="./icons/iconTwitter.svg" alt=""></a>
+						<a href="#"><img src="./icons/iconVK.svg" alt=""></a>
+					</div>
+					<div class="img-island">
+						<figure>
+							<div class="img-island-one img-block img-cursor">
+								<img src="./images/imgIsland.jpg" alt="Водопады истландии" class="waterfalls-iceland">
+								<p class="num-img">01</p>
+								<p class="text-img">Водопады Истландии</p>
+								<p class="arrow-img">&rarr;</p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-island-two img-block img-cursor">
+								<img src="./images/imgDolom.jpg" alt="Сказачные доломиты" class="fabulous-dolomites">
+								<p class="num-img">02</p>
+								<p class="text-img">Сказачные Доломиты</p>
+								<p class="arrow-img">&rarr;</p>
+							</div>
+						</figure>
+						<figure>
+							<div class="img-island-three img-block img-cursor">
+								<img src="./images/imgNor.jpg" alt="Неизведанная норвегия" class="unexplored-norway">
+								<p class="num-img">03</p>
+								<p class="text-img">Неизведанная Норвегия</p>
+								<p class="arrow-img">&rarr;</p>
+							</div>
+						</figure>
+					</div>	
+				</div>
+		</main>
+			<menu>
+				<a class="close-btn" href="#close">&times</a>
+				<ul>
+					<li><a href="#all-tours">Все туры</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+				</ul>
+			</menu>
+			<div class="container">
+				<section id="all-tours" class="all-tours-class">						
+						<figure>
+							<div class="img-hawaii img-block">
+								<img src="./images/imgHawaii.jpg" alt="остров Гавайиы">
+								<p class="num-img">10-24 <br><span>апреля</span></p>
+								<p class="text-img">Большое ущелье на острове Гавайиы</p>
+								<p class="arrow-img">&rarr;</p>
+							</div>
+						</figure>
+						<div class="see-all">
+							<h2>Посмотрите все направления туров</h2>
+							<p>Берега океанов и дикие пляжи с редкими породами деревьев. Местная архитектура и первозданный вид дикой природы</p>
 							<div class="btn">
-								<button class="btn-sub-applic" type="submit">Оставить заявку</button>
+								<button class="btn-see-all" type="submit">Смотреть все</button>
 							</div>
-							<div class="logo-play">
-								<img src="./icons/iconPlay.svg" alt="Play">
+						</div>
+					</section>
+			</div>
+			<div class="container">
+				<section id="contacts" class="contacts-class">
+						<div class="img-form">
+							<img src="./images/imgForm.jpg" alt="">
+							<div class="order-and-form">
+								<div class="order-text">
+									<h2>Оставьте заявку на бесплатную консультацию</h2>
+									<p>Мы перезвоним вам в <br> ближайшее время</p>
+								</div>
+								<form id="form2" action="">
+									<input id="form2-name" type="text" name="user-name" placeholder="Ваше имя" required>
+									<input id="form2-phone" type="tel" nsme="user-phone" placeholder="+7 (___)___-__-__" required>
+									<button class="form-btn" type="submit">Отправить заявку</button>
+									<small>Нажимая на кнопку вы даете согласие <br> на <span><a href="#">обработку персональных данных</a></span> </small>
+								</form>
+							</div>			
+						</div>							
+				</section>
+			</div>
+			<div class="container">
+				<section id="reviews" class="reviews-class">
+						<figure class="img-feed">
+							<img src="./images/imgFeed.jpg" alt="">
+							<p class="rew-img">Отзыв <br><span>Елена Иванова</span></p>	
+							<p class="rew-text-img">Пожалуй, это был самый<br>лучший отпуск в моей жизни…</p>
+							<p class="rew-arrow-img">&rarr;</p>
+						</figure>
+						<div class="review-text">
+							<h2>Что пишут участники<br> наших путешествий</h2>
+							<p>87% участников приходят по личной рекомендации от <br> друзей. А каждый 4-ый путешествует с нами больше двух раз!</p>
+							<div class="btn">
+								<button class="btn-read reviews" type="submit">Читать отзывы</button>
 							</div>
-							<p>Посмотрите видео-отчет 2018-2019</p>
-					    </div>
+						 </div>
+				</section>
+			</div>
+			<footer>
+			 	<div class="container">						
+					<div class="logo">
+						<img src="./icons/iconLogoDark.svg" alt="Trip & Mind">
 					</div>
-					<div class="container">		
+					<p class="footer-text-one">политика<br>конфиденциальности</p>
+					<p class="footer-text-two">Соглашение на обработку<br> Персональных Данных</p>
+					<div class="social-net-footer">
 						<div class="social-net">
-							<small>Подписывайтесь в соцсетях</small>
 							<a href="#"><img src="./icons/iconYouTube.svg" alt=""></a>
 							<a href="#"><img src="./icons/iconFB.svg" alt=""></a>
 							<a href="#"><img src="./icons/iconTwitter.svg" alt=""></a>
 							<a href="#"><img src="./icons/iconVK.svg" alt=""></a>
 						</div>
-						<div class="img-island">
-							<figure>
-								<div class="img-island-one img-block img-cursor">
-									<img src="./images/imgIsland.jpg" alt="Водопады истландии" class="waterfalls-iceland">
-									<p class="num-img">01</p>
-									<p class="text-img">Водопады Истландии</p>
-									<p class="arrow-img">&rarr;</p>
-								</div>
-							</figure>
-							<figure>
-								<div class="img-island-two img-block img-cursor">
-									<img src="./images/imgDolom.jpg" alt="Сказачные доломиты" class="fabulous-dolomites">
-									<p class="num-img">02</p>
-									<p class="text-img">Сказачные Доломиты</p>
-									<p class="arrow-img">&rarr;</p>
-								</div>
-							</figure>
-							<figure>
-								<div class="img-island-three img-block img-cursor">
-									<img src="./images/imgNor.jpg" alt="Неизведанная норвегия" class="unexplored-norway">
-									<p class="num-img">03</p>
-									<p class="text-img">Неизведанная Норвегия</p>
-									<p class="arrow-img">&rarr;</p>
-								</div>
-							</figure>
-						</div>	
-					</div>
-				</header>
-				<menu>
-					<a class="close-btn" href="#close">&times</a>
-					<ul>
-						<li><a href="#all-tours">Все туры</a></li>
-						<li><a href="#contacts">Контакты</a></li>
-						<li><a href="#reviews">Отзывы</a></li>
-					</ul>
-				</menu>
-			<main>
-				<div class="container">
-					<section id="all-tours" class="all-tours-class">						
-							<figure>
-								<div class="img-hawaii img-block">
-									<img src="./images/imgHawaii.jpg" alt="остров Гавайиы">
-									<p class="num-img">10-24 <br><span>апреля</span></p>
-									<p class="text-img">Большое ущелье на острове Гавайиы</p>
-									<p class="arrow-img">&rarr;</p>
-								</div>
-							</figure>
-							<div class="see-all">
-								<h2>Посмотрите все направления туров</h2>
-								<p>Берега океанов и дикие пляжи с редкими породами деревьев. Местная архитектура и первозданный вид дикой природы</p>
-								<div class="btn">
-									<button class="btn-see-all" type="submit">Смотреть все</button>
-								</div>
-							</div>
-						
-					</section>
-				</div>
-				<div class="container">
-					<section id="contacts" class="contacts-class">
-							<div class="img-form">
-								<img src="./images/imgForm.jpg" alt="">
-								<div class="order-and-form">
-									<div class="order-text">
-										<h2>Оставьте заявку на бесплатную консультацию</h2>
-										<p>Мы перезвоним вам в <br> ближайшее время</p>
-									</div>
-									<form id="form2" action="">
-										<input id="form2-name" type="text" name="user-name" placeholder="Ваше имя" required>
-										<input id="form2-phone" type="tel" nsme="user-phone" placeholder="+7 (___)___-__-__" required>
-										<button class="form-btn" type="submit">Отправить заявку</button>
-										<small>Нажимая на кнопку вы даете согласие <br> на <span><a href="#">обработку персональных данных</a></span> </small>
-									</form>
-							    </div>			
-							</div>							
-					</section>
-				</div>
-				<div class="container">
-					<section id="reviews" class="reviews-class">
-							<figure class="img-feed">
-								<img src="./images/imgFeed.jpg" alt="">
-								<p class="rew-img">Отзыв <br><span>Елена Иванова</span></p>	
-								<p class="rew-text-img">Пожалуй, это был самый<br>лучший отпуск в моей жизни…</p>
-								<p class="rew-arrow-img">&rarr;</p>
-								
-							</figure>
-							<div class="review-text">
-								<h2>Что пишут участники<br> наших путешествий</h2>
-								<p>87% участников приходят по личной рекомендации от <br> друзей. А каждый 4-ый путешествует с нами больше двух раз!</p>
-								<div class="btn">
-									<button class="btn-read reviews" type="submit">Читать отзывы</button>
-								</div>
-						    </div>
-					</section>
-			   	</div>
-			</main>
-			<footer>
-				<div class="container">
-					<section class="footer">						
-							<div class="logo">
-								<img src="./icons/iconLogoDark.svg" alt="Trip & Mind">
-							</div>
-							<p class="footer-text-one">политика<br>конфиденциальности</p>
-							<p class="footer-text-two">Соглашение на обработку<br> Персональных Данных</p>
-							<div class="social-net-footer">
-								<div class="social-net">
-									<a href="#"><img src="./icons/iconYouTube.svg" alt=""></a>
-									<a href="#"><img src="./icons/iconFB.svg" alt=""></a>
-									<a href="#"><img src="./icons/iconTwitter.svg" alt=""></a>
-									<a href="#"><img src="./icons/iconVK.svg" alt=""></a>
-								</div>
-							</div>						
-					</section>
+					</div>						
 				</div>
 			</footer>
-		</div>
-		<script src="script.js"></script>
-	</body>
-</html>
+	 	<script src="script.js"></script>
+ 	</body>
+	</html> 
