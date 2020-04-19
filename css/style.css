@@ -36,7 +36,7 @@
 }
 
 body{
-    margin: 0;
+    margin: 0; 
 }
 
 main{
@@ -50,12 +50,14 @@ main{
     background-size: cover;
     color: #fff;
 }
+
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    border: 1px solid red;
 }
 .href-menu{
     width: 25%;
@@ -77,6 +79,9 @@ header{
     height: 30px;
    
 }
+
+
+
 
 .icon-wrapper{
     width: 30px;
@@ -128,4 +133,266 @@ header{
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
   }
+
+
+
+
+  
+  hgroup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%; 
+  }
+  hgroup h1 {
+    margin: 0;
+    margin-top: 8rem;
+    font-size: 4rem;
+    line-height: 100px;
+    font-family: 'PlayfairDisplay-Bold';
+   }
+   hgroup h2 {
+    margin-top: 45px;
+    margin-bottom: 0;
+    line-height: 3.1rem;
+    font-family: 'Montserrat-Light';
+    line-height: 2.8rem;
+    font-size: 1.5rem;
+   }
+
+
+
+
+
+
+ .play-and-btn{
+   display: flex;
+   margin-top: 4rem;
+   flex-direction:row;
+   align-items: flex-start;
+   width: 90%; 
+ }
+ 
+.btn-sub-applic{
+  outline:none;
+  width: 307px;
+  height: 75px;
+  background-color: #EFC42B;
+  font: 20px 'Montserrat-SemiBold';
+  border-radius: 38px;
+  transition: all 0.1s linear;
+}
+
+.logo-play img{
+  cursor: pointer;
+  margin-left: 3.7rem;
+}
+
+.play-and-btn p{
+  width: 110px;
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+  font: 1rem 'Montserrat-Medium';
+  color: #A2A9B7 ;
+}
+
+
+
+
+
+
+.img-social-net{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.img-social-net .social-net{
+ margin-top: 150px;
+ width: 165px;
+ height: 70px;
+ line-height: 30px;
+}
+.img-social-net .social-net a + a {
+  margin-left: 1.5rem;
+}
+
+
+
+
+
+
+.img-island{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+.img-block {
+  position: relative;
+}
+
+p{
+  margin: 0;
+}
+.img-cursor{
+  cursor: pointer;
+}
+figure{
+  margin: 0;
+  margin-bottom: 3.8rem;
+  
+
+}
+.img-island figure + figure{
+  margin-left: 30px;
+
+  
+}
+.img-block img {
+  border-radius: 1rem;
+  
+}
+.num-img{
+  position: absolute;
+  top: 16px;
+  left: 26px;
+  color: white;
+  font: 25px 'Montserrat-Medium';
+  
+}
+.text-img {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  bottom: 24px;
+  left: 26px;
+  font: 18px 'Montserrat-Regular';
+  line-height: 25px;
+  color: white;  
+  
+   
+}
+.arrow-img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 30px;
+  color: white;
+  
+}
+
+
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.all-tours-class{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem;
+} 
+
+section figure{
+  margin: 0;
+} 
+.img-hawaii img, .img-feed img{
+  border-radius: 16px;
+}
+
+.img-hawaii, .img-feed {
+  position: relative;
+}
+.tours-num-img, .rew-img{
+  position: absolute;
+  top: 16px;
+  left: 26px;
+  color: white;
+  font: 25px 'Montserrat-Medium';
+  
+}
+.tours-text-img, .rew-text-img {
+  position: absolute;
+  width: 260px;
+  height: 60px;
+  bottom: 24px;
+  left: 26px;
+  font: 18px 'Montserrat-Regular';
+  line-height: 25px;
+  color: white;  
+   
+}
+
+.tours-arrow-img, .rew-arrow-img {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 30px;
+  color: white;
+}
+
+
+
+
+.see-all h2{
+  font: 2.5rem  'PlayfairDisplay-Bold';
+  width: 100%;
+
+}
+.see-all p{
+  margin-top: 1.9rem;
+  font: 18px 'Montserrat-Regular';
+  line-height: 2rem;
+  width: 100%;
+}
+.see-all{
+ 
+  margin-left: 7.5rem;
+}
+
+.btn-see-all, .btn-read{
+  outline:none;
+  width: 16rem;
+  height: 4.6rem;
+  margin-top: 60px;
+  color: #EFC42B; 
+  font: 1.25rem 'Montserrat-SemiBold';
+  border-radius: 2.37rem;
+  border: 2px solid #EFC42B;
+}
+
+
+
+
+
+.reviews-class{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem;  
+} 
+
+.review-text{
+  margin-right: 3rem;
+}
+.review-text h2{
+  font: 42px 'PlayfairDisplay-Bold';
+  line-height: 55px;
+  width: 100%;
+
+}
+.review-text p{
+  margin-top: 1.9rem;
+  font: 18px 'Montserrat-Regular';
+  line-height: 33px;
+  width: 100%;
+}
 
