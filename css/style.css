@@ -33,11 +33,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
 }
 
 body{
-    margin: 0; 
-    border: 1px solid red;
+    margin: 0;   
 }
 
 main{
@@ -45,11 +45,12 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 110vh;
+    height: auto;
     min-height: 600px;
     background: url(/images/imgBackground.jpg) no-repeat center;
     background-size: cover;
     color: #fff;
+    
 }
 
 
@@ -59,13 +60,16 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 90%;
+   
 }
 .logo{
   margin: 20px 0;
+ 
 }
 .href-menu{
     width: 25%;
     margin-right: 9rem;
+   
 }
 .href-menu ul{
     display: flex;
@@ -77,11 +81,12 @@ header{
     text-decoration: none;
     color: #fff;
     font: 15px 'Montserrat-Medium';  
+    
 }
 .menu{
     width: 30px;
     height: 30px;
-   
+    
 }
 
 
@@ -93,13 +98,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-  
+   
   }
   .menu-icon{
     position: relative;
     width: 30px;
     height: 5px;
     background-color: white;
+   
   }
   .menu-icon::before {
     position: absolute;
@@ -111,6 +117,7 @@ header{
     height: 5px;
     background-color: white;
     transition:  transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
   }
   .menu-icon::after {
     position: absolute;
@@ -126,19 +133,43 @@ header{
   }
   .menu-icon.menu-icon-active{
     background-color: transparent;
+   
   }
   .menu-icon.menu-icon-active::before{
     transform: rotate(45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+   
   }
   .menu-icon.menu-icon-active::after{
     transform: rotate(-45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+   
   }
 
 
+.sidebar{
+ position: fixed;
+ z-index: 4;
+ top: 0;
+ left: 0;
+ opacity: .9;
+ width: 50%;
+ height: 100vh;
+ margin: 0;
+ background-color: black;
+ display: flex;
+ align-items: center;
+ transition: 1s;
+ transform: translateX(200%);
+ 
+}
+.sidebar-active{
+  transition: 1s;
+  transform: translateX(100%);
+ 
+}
 
 
   
@@ -146,13 +177,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 90%; 
+    width: 90%;
+    
   }
   hgroup h1 {
     margin: 0;
     margin-top: 5rem;
     font: 5rem 'PlayfairDisplay-Bold';
     line-height: 6rem;
+    
   
    }
    hgroup h2 {
@@ -162,6 +195,7 @@ header{
     font-family: 'Montserrat-Light';
     line-height: 2.8rem;
     font-size: 1.5rem;
+    
    }
 
 
@@ -175,6 +209,7 @@ header{
    flex-direction:row;
    align-items: flex-start;
    width: 90%; 
+   
  }
  
 .btn-sub-applic{
@@ -190,6 +225,7 @@ header{
 .logo-play img{
   cursor: pointer;
   margin-left: 3.7rem;
+  
 }
 
 .play-and-btn p{
@@ -198,6 +234,7 @@ header{
   margin-left: 1rem;
   font: 1rem 'Montserrat-Medium';
   color: #A2A9B7 ;
+ 
 }
 
 
@@ -211,6 +248,7 @@ header{
   width: 90%;
   margin-top: 70px;
   
+ 
 }
 
 .img-social-net .social-net{
@@ -218,14 +256,17 @@ header{
  flex-direction: column;
  margin-top: 9.3rem;
  margin-left: 0.2rem;
-
+ 
 }
 
 .img-social-net .social-net a + a {
   margin-left: 2.6rem;
+
 }
 .social-net small{
   font: 14px "Montserrat-Regular";
+  margin-bottom: 10px;
+ 
 }
 
 
@@ -236,19 +277,22 @@ header{
 .img-island{
   display: flex;
   flex-direction: row;
-  justify-content: center;
- 
+  justify-content: flex-end;
+  
 }
 
 .img-block {
   position: relative; 
+  
 }
 
 p{
   margin: 0;
+  
 }
 .img-cursor{
   cursor: pointer;
+  
 }
 figure{
   margin: 0;
@@ -256,13 +300,12 @@ figure{
 }
 
 .img-island figure + figure{
-  margin-left: 30px;
-
-  
+  margin-left: 30px; 
 }
+
 .img-block img {
   border-radius: 1rem;
-  
+
 }
 .num-img{
   position: absolute;
@@ -290,8 +333,9 @@ figure{
   right: 24px;
   font-size: 30px;
   color: white;
-  
+ 
 }
+
 
 
 
@@ -301,6 +345,7 @@ figure{
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 .all-tours-class{
@@ -308,20 +353,23 @@ figure{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 75%;
   margin: 9rem;
-  border: 1px solid red;
+ 
 } 
 
 section figure{
   margin: 0;
+  
 } 
 .img-hawaii img, .img-feed img{
   border-radius: 16px;
+  
 }
 
 .img-hawaii, .img-feed {
   position: relative;
+ 
 }
 .tours-num-img, .rew-img{
   position: absolute;
@@ -329,7 +377,7 @@ section figure{
   left: 26px;
   color: white;
   font: 25px 'Montserrat-Medium';
-  
+ 
 }
 .tours-text-img, .rew-text-img {
   position: absolute;
@@ -340,7 +388,7 @@ section figure{
   font: 18px 'Montserrat-Regular';
   line-height: 25px;
   color: white;  
-   
+  
 }
 
 .tours-arrow-img, .rew-arrow-img {
@@ -349,36 +397,39 @@ section figure{
   right: 24px;
   font-size: 30px;
   color: white;
+  
 }
 
 
 
-
+.see-all{
+  margin-left: 9rem;
+ 
+}
 
 .see-all h2{
   font: 2.5rem  'PlayfairDisplay-Bold';
-  width: 100%;
-
+  width: 90%;
+  
 }
 .see-all p{
   margin-top: 1.9rem;
   font: 18px 'Montserrat-Regular';
   line-height: 2rem;
-  width: 100%;
-}
-.see-all{
-  margin-left: 7.5rem;
+  width: 90%;
+  
 }
 
 .btn-see-all, .btn-read{
   outline:none;
   width: 16rem;
   height: 4.6rem;
-  margin-top: 60px;
+  margin-top: 3rem;
   color: #EFC42B; 
   font: 1.25rem 'Montserrat-SemiBold';
   border-radius: 2.37rem;
   border: 2px solid #EFC42B;
+ 
 }
 
 
@@ -389,8 +440,9 @@ section figure{
   flex-direction: row-reverse;
   align-items: center;
   width: 100%;
-  height: 50vh;
-  border: 1px solid red;
+  height: 100%;
+  padding: 20px;
+  
   background: url(/images/imgForm.jpg) no-repeat center 100%;
   background-size: cover;
 }
@@ -398,6 +450,7 @@ section figure{
   display: flex;
   flex-direction: row;
   justify-content: center;
+ 
 }
 
 
@@ -407,17 +460,22 @@ section figure{
   justify-content: center;
   align-items: flex-start;
   width: 30%;
+  
 }
 
 .order-text h2{
-  font: 42px 'PlayfairDisplay-Bold';
+  font: 2.6rem 'PlayfairDisplay-Bold';
   line-height: 55px;
+  width: 100%;
+  
  }
  
  .order-text p {
-   margin-top: 25px;
+   margin-top: 1.5rem;
    font: 18px 'Montserrat-Regular';
-   line-height: 33px;
+   line-height: 2rem;
+   width: 100%;
+  
  }
 
 
@@ -426,7 +484,7 @@ section figure{
 .order-and-form form{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+ 
   margin-left: 4rem;
 }
 .order-and-form #form2-name,
@@ -437,9 +495,11 @@ section figure{
   border: 1px solid #C7D8E2;
   font: 20px 'Montserrat-Medium';
   text-align: center;
+
 }
 input + input{
   margin-top: 20px;
+  
 }
 .form-btn{
   outline:none;
@@ -450,12 +510,14 @@ input + input{
   border-radius: 38px;
   font: 20px 'Montserrat-SemiBold';
   transition: all 0.1s linear;
+  
 }
 #form2 small{
   align-self: center;
   margin-top: 0.8rem;
   
   font: 11px 'Montserrat-Regular';
+  
 }
 
 
@@ -470,16 +532,18 @@ input + input{
   align-items: center;
   width: 80%;
   margin: 9rem;  
-  border: 1px solid red;
+  
 } 
 
 .review-text{
   margin-right: 2.5rem;
+  
 }
 .review-text h2{
   font: 2.6rem 'PlayfairDisplay-Bold';
   line-height: 55px;
   width: 100%;
+ 
 
 }
 .review-text p{
@@ -487,6 +551,7 @@ input + input{
   font: 1.1rem 'Montserrat-Regular';
   line-height: 2rem;
   width: 100%;
+  
 }
 
 
@@ -497,15 +562,15 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid red;
   width: 100%;
   height: 11rem;
   background-color: #ECEEF2;
+  
 }
 .footer-text-one, .footer-text-two {
   font: 14px 'Montserrat-Medium';
   line-height: 20px;
-  
+ 
 }
 footer .social-net{
   display: flex;
@@ -513,6 +578,7 @@ footer .social-net{
   flex-direction: row;
   justify-content: space-between;
   color: #8194A1;
+
 }
 
 

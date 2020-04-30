@@ -2,20 +2,22 @@
   .href-menu{
     width: 30%;
   } 
+
   hgroup h1 {  
     font-size: 4rem;
     line-height: 6rem;
-   }
+  }
 
-   hgroup h2 {
+  hgroup h2 {
     margin-top: 2rem;
     font-size: 1.4rem;
-   }
+  }
 
-   .logo-play img{ 
+  .logo-play img{ 
     margin-left: 2rem;
-   }
-   .play-and-btn{
+  }
+
+  .play-and-btn{
     margin-top: 2rem;
   }
 
@@ -25,28 +27,381 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin-top: 70px;
-   
+    margin-top: 70px; 
   }
 
   figure{
     margin: 0;
   }
 
-.img-social-net .social-net{
+  .img-social-net .social-net{ 
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+@media(max-width: 1860px){
+  .see-all, .review-text{
+    margin-left: 4rem;
+  } 
+}
+
+@media(max-width: 1750px){
+  .see-all, .review-text{
+    margin-left: 4rem;
   
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  }
+  .see-all h2, .review-text h2{
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .see-all p, .review-text p{
+    margin-top: 1rem;
+  }
+  .btn-see-all, .btn-read{
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width: 1680px){
+  .see-all {
+    margin-left: 3.5rem
+  }
+  .see-all h2{
+    width: 100%;
+    margin-top: 0.4rem;
+    line-height: 2.8rem;
+  }
+  .see-all p{
+    margin-top: 0.4rem;
+    width: 100%;
+    line-height: 1.7rem;
+  }
+  .btn-see-all, .btn-read{
+    margin-top: 2rem;
+  }
+
+
+
+
+  .review-text{
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+  .review-text h2{
+    font-size: 2.3rem ;
+    line-height: 3rem;
+  }
+  .review-text p{
+    margin-top: 1rem;
+    line-height: 1.6rem;
+  }
+  .btn-read{
+    margin-top: 1rem;
+  }
+}
+
+@media(max-width: 1250px){
+  .all-tours-class, .reviews-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 7rem;
   
+  } 
+  .see-all, .review-text{
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .see-all h2, .review-text h2{
+    width: 100%;
+    margin-top: 0.4rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .see-all p, .review-text p{
+    margin-top: 0.1rem;
+    width: 100%;
+    line-height: 1.7rem;
+    text-align: center;
+  }
+
+  .btn-see-all, .btn-read{
+    margin-top: 2rem;
+  }
+
+}
+
+
+@media(max-width: 1024px){
+  .href-menu{
+    display: none;
+  }
+  .img-social-net{
+    max-width: 650px;
+  }
+   /* слайдер */
+  .img-island{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    height: 50vh;
+    position: relative;
+  }
+
+  .img-island figure{
+    width: 100%;
+  }
  
- }
+  .img-island figure + figure{
+    margin-left: 0px; 
+  }
+
+  .img-island-one {
+    z-index: -4;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-island-two {
+    z-index: -3;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-island-three {
+    z-index: -2;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-block img{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .z-position{
+    z-index: 1;  
+    opacity: 1;
+    transition: opacity .5s linear;
+  }
+  
+
+
+
+
+  /* Окно 3 */
+  .order-and-form form{ 
+    margin-left: 1rem;
+  }
+
+  .order-text h2{
+    font: 2.2rem 'PlayfairDisplay-Bold';
+    line-height: 3rem;
+    width: 100%;
+   }
+   
+   .order-text p {
+     margin-top: 1rem;
+     font: 1rem 'Montserrat-Regular';
+     line-height: 1.8rem;
+     width: 100%;
+   }
+
 
 }
 
-/* @media(max-width: 1024px){
-  .container {width: 460px;}
+@media(max-width: 840px){
+ 
+  hgroup h1 {
+    align-self: center;
+    margin: 0;
+    margin-top: 1.7rem;
+    font: 3rem 'PlayfairDisplay-Bold';
+    line-height: 4rem;
+   }
+   hgroup h2 {
+    margin-top: 6rem;
+    margin-bottom: 0;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+   }
+
+   .play-and-btn{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction:column;
+    align-items:flex-start;
+    width: 90%; 
+  }
+  
+  .logo-play img{
+    cursor: pointer;
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+  }
+
+  .play-and-btn p{
+    width: 110px;
+    text-align: center;
+    margin-top: 0.6rem;
+    margin-left: 6.5rem;
+    font: 1rem 'Montserrat-Medium';
+    color: #A2A9B7 ;
+  }
+
+
+
+
+  .contacts-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    
+  }
+  .order-and-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .order-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 32px;
+    
+  }
+  
+  .order-text h2{
+    font: 2.6rem 'PlayfairDisplay-Bold';
+    line-height: 55px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    
+   }
+   
+   .order-text p {
+     margin-top: 1rem;
+     font: 18px 'Montserrat-Regular';
+     line-height: 2rem;
+     width: 100%;
+     text-align: center; 
+     
+   }
+
+
+   /* Окно 2 */
+   .all-tours-class, .reviews-class{
+    
+    width: 90%; 
+   }
+   .img-hawaii img, .img-feed img{
+    width: 100%;
+   }
+  
+} 
+
+@media(max-width: 640px){ 
+
+  .order-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 32px;
+   
+  }
+  .order-text h2{
+    font: 2.6rem 'PlayfairDisplay-Bold';
+    line-height: 55px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+   
+    
+   }
+   
+
+
+
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #9692A8;
+   
+    
+  }
+  
+  .footer-text-one, .footer-text-two {
+    font: 14px 'Montserrat-Medium';
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+  .footer-text-one{
+    margin: 0;
+  }
+  footer .social-net{
+    display: flex;
+    margin: 2rem 0;
+    width: 11rem;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  
+  
+} 
+@media (max-width: 500px){
+ 
+  .img-island{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    height: 50vh;
+    position: relative;
+  }
+  .img-block img{
+    width: 100%;
+    height: 40vh;
+  }
 }
 
-@media(max-width: 640px){
-  .container {width: 100%;}
-} */
+@media (max-width: 320px){
+  .btn-sub-applic{  
+    width: 290px;
+    height: 75px; 
+  }
+
+}
