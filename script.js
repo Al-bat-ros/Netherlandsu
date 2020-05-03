@@ -2,15 +2,15 @@
 const menuBurger = () => {
   const icon = document.querySelector('.menu-icon'),
         iconWrapper = document.querySelector('.icon-wrapper'),
-        sidebar = document.querySelector('.sidebar'),
-        closeBtn = document.querySelector('.close-btn');
+        sidebar = document.querySelector('.sidebar');
         
 
   iconWrapper.addEventListener('click', () => {
       icon.classList.toggle('menu-icon-active');
       sidebar.classList.toggle('sidebar-active');
   });
-  closeBtn.addEventListener('click', () => {
+  sidebar.addEventListener('click', (event) => {
+    let target = event.target;
        sidebar.classList.remove('sidebar-active');
        icon.classList.remove('menu-icon-active');
   });
@@ -77,7 +77,22 @@ const slideShow = () => {
 };
 slideShow();
 
-
-    
-
+//Плавная прокрутка
+const scrollView = () => {
+    const scrollTo = document.querySelectorAll('a.scroll-to');
+   
+      for (let scroll of scrollTo){
+        scroll.addEventListener('click', (event) => {
+          event.preventDefault();
+          
+           const idScroll = scroll.getAttribute('href');
+           
+          document.querySelector(idScroll).scrollIntoView({
+            behavior: 'smooth',
+            black: 'start'
+          });
+        });
+      }
+}
+scrollView();
 

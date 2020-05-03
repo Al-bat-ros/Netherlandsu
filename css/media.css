@@ -326,6 +326,7 @@
 } 
 
 @media(max-width: 640px){ 
+ 
 
   .order-text{
     display: flex;
@@ -342,9 +343,7 @@
     line-height: 55px;
     width: 100%;
     text-align: center;
-    margin: 0;
-   
-    
+    margin: 0; 
    }
    
 
@@ -359,7 +358,6 @@
     height: 100%;
     background-color: #9692A8;
    
-    
   }
   
   .footer-text-one, .footer-text-two {
@@ -381,6 +379,7 @@
   
   
 } 
+
 @media (max-width: 500px){
  
   .img-island{
@@ -397,8 +396,20 @@
     height: 40vh;
   }
 }
-
+@media(max-width: 420px){
+  .sidebar{ 
+    width: 100%;
+    height: 100vh;
+   }
+ 
+ 
+}
 @media (max-width: 320px){
+ .sidebar li{
+ margin-top: 5rem;
+ margin-left: 0.5rem;
+ 
+}
   .btn-sub-applic{  
     width: 290px;
     height: 75px; 

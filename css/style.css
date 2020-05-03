@@ -149,27 +149,62 @@ header{
   }
 
 
+
+
+
+/* Всплывающее меню */
 .sidebar{
  position: fixed;
  z-index: 4;
  top: 0;
- left: 0;
+ right: 0;
  opacity: .9;
- width: 50%;
+ width: 23rem;
  height: 100vh;
  margin: 0;
  background-color: black;
  display: flex;
- align-items: center;
+ flex-direction: column;
+ justify-content: flex-start;
  transition: 1s;
- transform: translateX(200%);
- 
+ transform: translateX(100%);
 }
 .sidebar-active{
   transition: 1s;
-  transform: translateX(100%);
+  transform: translateX(0%);
+}
+
+.sidebar .close-btn{
+   align-self: flex-start;
+   margin-left: 230px;
+   text-decoration: none;
+   font-size: 4rem;
+   color: white;
+}
+
+.sidebar li a{
+  outline:none;
+  text-decoration: none;
+  font: 40px 'Montserrat-SemiBold' ;
+  color: white; 
+  /* border: 1px solid red; */
+}
+
+.sidebar li a:hover{
+  color: rgb(214, 195, 195);
+}
+
+.sidebar li{
+ margin-top: 7.5rem;
+ margin-left: 1.8rem;
  
 }
+
+.sidebar li + li{
+  margin-top: 2rem; 
+}
+
+
 
 
   
@@ -217,7 +252,7 @@ header{
   width: 307px;
   height: 75px;
   background-color: #EFC42B;
-  font: 20px 'Montserrat-SemiBold';
+  font: 20px 'Montserrat-SemiBold' ;
   border-radius: 38px;
   transition: all 0.1s linear;
 }
@@ -355,7 +390,6 @@ figure{
   align-items: center;
   width: 75%;
   margin: 9rem;
- 
 } 
 
 section figure{
@@ -387,8 +421,7 @@ section figure{
   left: 26px;
   font: 18px 'Montserrat-Regular';
   line-height: 25px;
-  color: white;  
-  
+  color: white;   
 }
 
 .tours-arrow-img, .rew-arrow-img {
@@ -396,8 +429,7 @@ section figure{
   bottom: 24px;
   right: 24px;
   font-size: 30px;
-  color: white;
-  
+  color: white; 
 }
 
 
@@ -564,7 +596,7 @@ footer{
   align-items: center;
   width: 100%;
   height: 11rem;
-  background-color: #ECEEF2;
+  background-color: #9692A8;
   
 }
 .footer-text-one, .footer-text-two {
